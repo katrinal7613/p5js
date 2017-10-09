@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title>p5js Template</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.3/p5.js"></script>
+    
+    <script>
+        function setup() {
+            createCanvas(800,600);
+            
+        }
+
+        function draw() {
+          
+          //color
+          background(60,130,170)
+          stroke(10,10,10) 
+          
+           //body
+           fill(150,20,31)
+           rect(195,115,70,27) 
+           strokeWeight(8)
+           rect(150,160,160,160)
+           
+           //arms
+           fill(215,90,105)
+           rect(67,200,80,30)  //left arm
+           rect(315,200,80,30) //right arm
+           
+           //leg
+           fill(235,120,95)
+           ellipse(230,340,80,80) //wheel
+           
+           //eyes
+           fill(255,255,255)
+           strokeWeight(6)
+           ellipse(150,70,80,80) //left eye 
+           ellipse(310,70,80,80) //right eye
+           line(150,180,150,110)
+           line(310,110,310,185)
+           strokeWeight(25)
+           point(157,70)
+           point(315,70)
+           
+           //mouth
+           strokeWeight(6)
+           rect(195,115,70,20)
+           
+           //text
+          stroke(200,130,226)
+          textSize(25)
+          text("welcome", 180,250)
+           
+           
+          
+         
+           
+          
+          
+           
+        }
+    </script>
+</head>
+
+<body>
+    <div id="code" class="container-fluid">
+        <script src="https://gist-it.appspot.com/github/KATRINAL7613/p5js/blob/master/FILENAME.html?footer=0"></script>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(window).bind("load", function() {
+            $('#code').before($('#defaultCanvas0').remove());
+        });
+    </script>
+</body>
+<body>
+    <div id="code" class="container-fluid">
+        <script src="https://gist-it.appspot.com/github/USERNAME/p5js/blob/master/FILENAME.html?footer=0"></script>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(window).bind("load", function() {
+            $('#code').before($('#defaultCanvas0').remove());
+        });
+    </script>
+</body>
+
+</html>
