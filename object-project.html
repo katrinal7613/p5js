@@ -26,8 +26,8 @@
             ellipse(200, 100, 50, 50); 
             rect(210, 100, 50, 50);
             for (i = 0; i < snakes.length; i++) { // when the snake is touched add length
-                snakes[i].move();
-                snakes[i].display();
+                snakes[i].move(); // calling snake to move
+                snakes[i].display(); // calling snakes to display on the screen 
             }
         }
 
@@ -40,8 +40,8 @@
                 this.y += random(-2, -1); // y be in between -2 and -1
             }
             this.display = function() {
-             stroke(300)
-             noFill();
+             stroke(300) 
+             noFill(); // no fill inside shapes
              ellipse(this.x,this.y,50,50);
              rect(this.x,this.y,50,50);
              ellipse(this.x,this.y,50,60);
@@ -49,7 +49,7 @@
         }
 
         function keyPressed() {
-            frameRate();
+            frameRate(5); // the speed the frame is being replace
             
         }
 
@@ -57,8 +57,9 @@
             snakes.push(new snake(mouseX, mouseY)); // when the mouse is press have a new snake appear
         
         }
-        function score(){
+        function score(){ 
            textSize(10);
+            
            
            
         }
